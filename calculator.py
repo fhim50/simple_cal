@@ -1,15 +1,24 @@
 from Tkinter import *
 
-class calculator():
+class Calculator(Frame):
 
-	def __init__(self):
-		pass
+	def __init__(self, master = None):
+		Frame.__init__(self, master)
+		self.grid()
+		self.createWidgets()
+		self.createNumbers()
 
-	def key_press(self):
-		pass
+	def createWidgets(self):
+		self.quitButton = Button(self, text = "Quit", command = self.quit)
+		self.quitButton.grid()
 
+	def createNumbers(self):
 
+		self.numberButton = Button(self, text = "1").grid()
+		
+		
 
-
-if __name__ == '__main__':
-	calculator.run()
+app = Calculator()
+app.master.title("Simple Calc")
+app.mainloop()
+	
