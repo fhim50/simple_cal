@@ -14,7 +14,6 @@ class Interface:
 		self.console.insert(0, '0')
 		return self.console
 
-
 class Calculator:
 
 	def __init__(self):
@@ -49,9 +48,6 @@ class Calculator:
 			self.estimate()
 		else:
 			self.results = float(console.get())
-		# self.results = float(console.get())
-		# return self.estimate() if self.pending_operatio
-
 
 	def log(self, value):
 		console.delete(0, END)
