@@ -69,7 +69,6 @@ class Calculator:
 		if self.operator is '*':
 			self.results *= value
 
-		
 		self.key_press = True
 		self.pending_operation = False
 		self.log(self.results)
@@ -98,8 +97,6 @@ def button(text, row, column, command = None):
 	button['command'] = command
 	button.grid(row = row, column = column, pady = 3)
 	return button
-
-
 
 interface = Interface()
 calculator = Calculator()
