@@ -9,7 +9,7 @@ class Interface:
 		self.window.grid()
 
 	def input(self):
-		self.console = Entry(self.window, justify = RIGHT, fg = '#333333', width = 30)
+		self.console = Entry(self.window, justify = RIGHT, fg = '#333333', width = 40)
 		self.console.grid(row= 0, column = 0, columnspan = 5, padx = 5, pady = 5)
 		self.console.insert(0, '0')
 		return self.console
